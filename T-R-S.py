@@ -2,24 +2,24 @@ import requests
 import time
 import re
 import os
-import os
 import sys
-from cfonts import render, say
 import datetime
-today_date = datetime.date.today()
 
+today_date = datetime.date.today()
 new_today_date = today_date.strftime("%d/%m/%Y")
 
 sys.stdout.write('\x1b]2;🔥TIKTOK REPORTER🎭\x07')
-os.system('pip install pyfiglet')
 os.system('clear')
+
+# Pyfiglet import
 import pyfiglet
-output = render('TIKTOK',
-                        colors=['red', 'blue'], align='center')
-print(output)                                                    
-output = render('REPORTER',
-                        colors=['green', 'red'], align='center')
-print(output)   
+
+# Pyfiglet er maddhome text generate kora
+output = pyfiglet.figlet_format('TIKTOK', font='slant', width=100)
+print(output)
+
+output = pyfiglet.figlet_format('REPORTER', font='slant', width=100)
+print(output)
 
 def to(s):
     for char in s + "\n":
@@ -30,7 +30,7 @@ def to(s):
 to(
     f"\033[31;m TOOL >> \033[1;36mTIKTOK REPORT SCRIPT\n\033[1;31m DEVELOPER >>\033[1;33m @SayNoX \n\033[31;m JOIN >> \033[1;36m @NiXoN  \n\033[31;m")
 print('Date > \033[1;36m')
-print (new_today_date)   
+print(new_today_date)   
 print('')
 print('')                                               
 print('\033[1;92m[🔥] 1-𝐀𝐥𝐥 𝐑𝐞𝐩𝐨𝐫𝐭')
